@@ -1,0 +1,78 @@
+#directory {
+    align-items: center;
+    #title {
+        align-self: flex-start;
+        margin-left: 3vw;
+        font-size: 42px;
+        text-decoration: underline;
+    }
+    #content {
+        width: 70%;
+        gap: 4vw;
+        align-items: flex-start;
+        margin-bottom: 10vh;
+        #contacts {
+            flex: 1;
+
+            #search-wrapper {
+                justify-content: space-between;
+                #input-search {
+                    flex-grow: 1;
+                    margin-right: 2vw;
+                    font-size: 16px;
+                }
+            }
+            #button-more-contacts {
+                background-color: lightblue;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+                align-self: center;
+                padding: 1vh 2vw 1vh 2vw;
+            }
+        }
+        #fav-contacts {
+            flex: 1;
+
+            #fav-title {
+                margin: 0px;
+                font-size: 32px;
+            }
+        }
+        .contact {
+            justify-content: space-between;
+            flex-grow: 1;
+            height: auto;
+            padding: 0.75rem;
+            margin: 2vh 0vw 2vh 0vw;
+            border: solid;
+            .user-info {
+                align-items: center;
+                img {
+                    width: 5rem;
+                    margin-right: 2vw;
+                }
+            }
+            .fav-icon {
+                width: 2rem;
+            }
+        }
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.cliquable {
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
